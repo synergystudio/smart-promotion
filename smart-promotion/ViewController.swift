@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  smart-promotion
+//  Promotion2U
 //
-//  Created by Sudjarit Puatham on 7/12/2558 BE.
+//  Created by Sudjarit Puatham on 7/5/2558 BE.
 //  Copyright (c) 2558 Sudjarit Puatham. All rights reserved.
 //
 
