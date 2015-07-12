@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2B890E41B529288007CFF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B890E31B529288007CFF53 /* AppDelegate.swift */; };
+		B2B890E61B529288007CFF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B890E51B529288007CFF53 /* ViewController.swift */; };
+		B2B890E91B529288007CFF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B890E71B529288007CFF53 /* Main.storyboard */; };
+		B2B890EB1B529288007CFF53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B890EA1B529288007CFF53 /* Images.xcassets */; };
+		B2B890EE1B529288007CFF53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B890EC1B529288007CFF53 /* LaunchScreen.xib */; };
+		B2B890FA1B529288007CFF53 /* smart_promotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B890F91B529288007CFF53 /* smart_promotionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2B890F41B529288007CFF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2B890D61B529288007CFF53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2B890DD1B529288007CFF53;
+			remoteInfo = "smart-promotion";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2B890DE1B529288007CFF53 /* smart-promotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart-promotion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B890E21B529288007CFF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B890E31B529288007CFF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2B890E51B529288007CFF53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2B890E81B529288007CFF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2B890EA1B529288007CFF53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2B890ED1B529288007CFF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B2B890F31B529288007CFF53 /* smart-promotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "smart-promotionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B890F81B529288007CFF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B890F91B529288007CFF53 /* smart_promotionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smart_promotionTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2B890DB1B529288007CFF53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B890F01B529288007CFF53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2B890D51B529288007CFF53 = {
+			isa = PBXGroup;
+			children = (
+				B2B890E01B529288007CFF53 /* smart-promotion */,
+				B2B890F61B529288007CFF53 /* smart-promotionTests */,
+				B2B890DF1B529288007CFF53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2B890DF1B529288007CFF53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2B890DE1B529288007CFF53 /* smart-promotion.app */,
+				B2B890F31B529288007CFF53 /* smart-promotionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2B890E01B529288007CFF53 /* smart-promotion */ = {
+			isa = PBXGroup;
+			children = (
+				B2B890E31B529288007CFF53 /* AppDelegate.swift */,
+				B2B890E51B529288007CFF53 /* ViewController.swift */,
+				B2B890E71B529288007CFF53 /* Main.storyboard */,
+				B2B890EA1B529288007CFF53 /* Images.xcassets */,
+				B2B890EC1B529288007CFF53 /* LaunchScreen.xib */,
+				B2B890E11B529288007CFF53 /* Supporting Files */,
+			);
+			path = "smart-promotion";
+			sourceTree = "<group>";
+		};
+		B2B890E11B529288007CFF53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2B890E21B529288007CFF53 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2B890F61B529288007CFF53 /* smart-promotionTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2B890F91B529288007CFF53 /* smart_promotionTests.swift */,
+				B2B890F71B529288007CFF53 /* Supporting Files */,
+			);
+			path = "smart-promotionTests";
+			sourceTree = "<group>";
+		};
+		B2B890F71B529288007CFF53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2B890F81B529288007CFF53 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2B890DD1B529288007CFF53 /* smart-promotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B890FD1B529288007CFF53 /* Build configuration list for PBXNativeTarget "smart-promotion" */;
+			buildPhases = (
+				B2B890DA1B529288007CFF53 /* Sources */,
+				B2B890DB1B529288007CFF53 /* Frameworks */,
+				B2B890DC1B529288007CFF53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "smart-promotion";
+			productName = "smart-promotion";
+			productReference = B2B890DE1B529288007CFF53 /* smart-promotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2B890F21B529288007CFF53 /* smart-promotionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B891001B529288007CFF53 /* Build configuration list for PBXNativeTarget "smart-promotionTests" */;
+			buildPhases = (
+				B2B890EF1B529288007CFF53 /* Sources */,
+				B2B890F01B529288007CFF53 /* Frameworks */,
+				B2B890F11B529288007CFF53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2B890F51B529288007CFF53 /* PBXTargetDependency */,
+			);
+			name = "smart-promotionTests";
+			productName = "smart-promotionTests";
+			productReference = B2B890F31B529288007CFF53 /* smart-promotionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2B890D61B529288007CFF53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Sudjarit Puatham";
+				TargetAttributes = {
+					B2B890DD1B529288007CFF53 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					B2B890F21B529288007CFF53 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B2B890DD1B529288007CFF53;
+					};
+				};
+			};
+			buildConfigurationList = B2B890D91B529288007CFF53 /* Build configuration list for PBXProject "smart-promotion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2B890D51B529288007CFF53;
+			productRefGroup = B2B890DF1B529288007CFF53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2B890DD1B529288007CFF53 /* smart-promotion */,
+				B2B890F21B529288007CFF53 /* smart-promotionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2B890DC1B529288007CFF53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B890E91B529288007CFF53 /* Main.storyboard in Resources */,
+				B2B890EE1B529288007CFF53 /* LaunchScreen.xib in Resources */,
+				B2B890EB1B529288007CFF53 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B890F11B529288007CFF53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2B890DA1B529288007CFF53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B890E61B529288007CFF53 /* ViewController.swift in Sources */,
+				B2B890E41B529288007CFF53 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B890EF1B529288007CFF53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B890FA1B529288007CFF53 /* smart_promotionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2B890F51B529288007CFF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2B890DD1B529288007CFF53 /* smart-promotion */;
+			targetProxy = B2B890F41B529288007CFF53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2B890E71B529288007CFF53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2B890E81B529288007CFF53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2B890EC1B529288007CFF53 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2B890ED1B529288007CFF53 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2B890FB1B529288007CFF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2B890FC1B529288007CFF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2B890FE1B529288007CFF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "smart-promotion/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2B890FF1B529288007CFF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "smart-promotion/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B2B891011B529288007CFF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "smart-promotionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smart-promotion.app/smart-promotion";
+			};
+			name = Debug;
+		};
+		B2B891021B529288007CFF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "smart-promotionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smart-promotion.app/smart-promotion";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2B890D91B529288007CFF53 /* Build configuration list for PBXProject "smart-promotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B890FB1B529288007CFF53 /* Debug */,
+				B2B890FC1B529288007CFF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B890FD1B529288007CFF53 /* Build configuration list for PBXNativeTarget "smart-promotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B890FE1B529288007CFF53 /* Debug */,
+				B2B890FF1B529288007CFF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2B891001B529288007CFF53 /* Build configuration list for PBXNativeTarget "smart-promotionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B891011B529288007CFF53 /* Debug */,
+				B2B891021B529288007CFF53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2B890D61B529288007CFF53 /* Project object */;
+}
