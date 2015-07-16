@@ -9,6 +9,7 @@
 import UIKit
 class PromotionListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var promotionTableView: UITableView!
+    let titleName  = "Promotions"
     let promotionNames: [String] = ["มา 4 จ่าย 3","VC Fablic Factory Sale 2015","Mega Mid-Year Sale","Central Greatest Grand Sale","Robinson All About Health & Beauty","King Power"]
     
     let location : [String] = ["Central Embassy","Central Embassy","Central Embassy","Central Chidlom","Central Chidlom","Central Chidlom"];
@@ -27,7 +28,9 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
     let unlike = UIImage(named: "un-like.png")
     let promotionCellIdentifier = "promotionCellIdentifier"
     let countItem = 6;
-    
+    override func viewWillAppear(animated: Bool) {
+        self.tabBarController?.navigationItem.title = titleName
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         promotionTableView.delegate = self

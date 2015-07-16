@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21C41321B57F0D600DA7F28 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21C41311B57F0D600DA7F28 /* TabViewController.swift */; };
 		B2B890E41B529288007CFF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B890E31B529288007CFF53 /* AppDelegate.swift */; };
 		B2B890E61B529288007CFF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B890E51B529288007CFF53 /* ViewController.swift */; };
 		B2B890E91B529288007CFF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B890E71B529288007CFF53 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B21C41311B57F0D600DA7F28 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		B2B890DE1B529288007CFF53 /* smart-promotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart-promotion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B890E21B529288007CFF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B890E31B529288007CFF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B21C41301B57F0AA00DA7F28 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				B21C41311B57F0D600DA7F28 /* TabViewController.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
 		B2B890D51B529288007CFF53 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		B2B890E01B529288007CFF53 /* smart-promotion */ = {
 			isa = PBXGroup;
 			children = (
+				B21C41301B57F0AA00DA7F28 /* Tab */,
 				B2B8911F1B529456007CFF53 /* Promotion */,
 				B2B891031B5293F4007CFF53 /* Images */,
 				B2B890E31B529288007CFF53 /* AppDelegate.swift */,
@@ -277,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21C41321B57F0D600DA7F28 /* TabViewController.swift in Sources */,
 				B2B891251B529456007CFF53 /* PromotionViewCell.swift in Sources */,
 				B2B890E61B529288007CFF53 /* ViewController.swift in Sources */,
 				B2B891231B529456007CFF53 /* PromotionDetailViewController.swift in Sources */,
@@ -479,6 +491,7 @@
 				B2B890FF1B529288007CFF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2B891001B529288007CFF53 /* Build configuration list for PBXNativeTarget "smart-promotionTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +500,7 @@
 				B2B891021B529288007CFF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
