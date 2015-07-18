@@ -22,6 +22,7 @@ class PromotionDetailViewController: UIViewController {
     @IBOutlet var fourStarImg: UIImageView!
     @IBOutlet var fiveStarImg: UIImageView!
     @IBOutlet var favoriteImg: UIImageView!
+    @IBOutlet var scrollView: UIScrollView!
     
     var promotionName=String()
     
@@ -46,7 +47,8 @@ class PromotionDetailViewController: UIViewController {
         self.shortDescLbl.sizeToFit()
         self.provinceLbl.text = province
         self.distanceLbl.text = distance
-        self.promotionIconImg.image = UIImage(named: promotionImage)
+//        promotionCell.promotionIconImg.downloadImage(promotionImage[indexPath.row])
+        self.promotionIconImg.downloadImage(promotionImage)
         let likeFlagTemp = likeFlag;
         if likeFlag == "Y" {
             self.favoriteImg.image = self.liked
@@ -95,5 +97,6 @@ class PromotionDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.scrollView.contentSize = self.view.bounds.size
     }
 }

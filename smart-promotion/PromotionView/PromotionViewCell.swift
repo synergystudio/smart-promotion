@@ -22,4 +22,5 @@ class PromotionListViewCell:UITableViewCell  {
     @IBOutlet var fourStarImg: UIImageView!
     @IBOutlet var fiveStarImg: UIImageView!
     @IBOutlet var favoriteImg: UIImageView!
+    @IBOutlet var cellContent: UIView!
 }

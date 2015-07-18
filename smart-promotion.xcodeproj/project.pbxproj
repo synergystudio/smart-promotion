@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B21C41321B57F0D600DA7F28 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21C41311B57F0D600DA7F28 /* TabViewController.swift */; };
+		B2595D7F1B5A236600DEEEFE /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2595D7E1B5A236600DEEEFE /* PageItemController.swift */; };
+		B27C1C3B1B5A4977007E2E35 /* ImagePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C1C3A1B5A4977007E2E35 /* ImagePageViewController.swift */; };
+		B27C1C3E1B5A580A007E2E35 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C1C3D1B5A580A007E2E35 /* TabViewController.swift */; };
+		B27C1C431B5A5815007E2E35 /* PromotionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C1C401B5A5815007E2E35 /* PromotionDetailViewController.swift */; };
+		B27C1C441B5A5815007E2E35 /* PromotionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C1C411B5A5815007E2E35 /* PromotionListViewController.swift */; };
+		B27C1C451B5A5815007E2E35 /* PromotionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C1C421B5A5815007E2E35 /* PromotionViewCell.swift */; };
+		B27C1C4C1B5A7C18007E2E35 /* image-not-found.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C1C4B1B5A7C18007E2E35 /* image-not-found.png */; };
+		B27C1C4F1B5A7D16007E2E35 /* ApplicationConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C1C4E1B5A7D16007E2E35 /* ApplicationConstant.swift */; };
+		B27C1C521B5A8423007E2E35 /* Toucan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C1C511B5A8423007E2E35 /* Toucan.swift */; };
+		B27C1C551B5AB719007E2E35 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C1C541B5AB719007E2E35 /* ImageExtension.swift */; };
+		B27C1C571B5AB72C007E2E35 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C1C561B5AB72C007E2E35 /* ColorExtension.swift */; };
+		B27C1C591B5ABCEE007E2E35 /* distance.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C1C581B5ABCEE007E2E35 /* distance.png */; };
 		B2B890E41B529288007CFF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B890E31B529288007CFF53 /* AppDelegate.swift */; };
 		B2B890E61B529288007CFF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B890E51B529288007CFF53 /* ViewController.swift */; };
 		B2B890E91B529288007CFF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B890E71B529288007CFF53 /* Main.storyboard */; };
@@ -24,9 +35,6 @@
 		B2B891151B5293F4007CFF53 /* rated.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8910B1B5293F4007CFF53 /* rated.png */; };
 		B2B891161B5293F4007CFF53 /* un-like.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8910C1B5293F4007CFF53 /* un-like.png */; };
 		B2B891171B5293F4007CFF53 /* un-rate.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8910D1B5293F4007CFF53 /* un-rate.png */; };
-		B2B891231B529456007CFF53 /* PromotionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B891201B529456007CFF53 /* PromotionDetailViewController.swift */; };
-		B2B891241B529456007CFF53 /* PromotionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B891211B529456007CFF53 /* PromotionListViewController.swift */; };
-		B2B891251B529456007CFF53 /* PromotionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B891221B529456007CFF53 /* PromotionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B21C41311B57F0D600DA7F28 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		B2595D7E1B5A236600DEEEFE /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
+		B27C1C3A1B5A4977007E2E35 /* ImagePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePageViewController.swift; sourceTree = "<group>"; };
+		B27C1C3D1B5A580A007E2E35 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		B27C1C401B5A5815007E2E35 /* PromotionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionDetailViewController.swift; sourceTree = "<group>"; };
+		B27C1C411B5A5815007E2E35 /* PromotionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionListViewController.swift; sourceTree = "<group>"; };
+		B27C1C421B5A5815007E2E35 /* PromotionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionViewCell.swift; sourceTree = "<group>"; };
+		B27C1C4B1B5A7C18007E2E35 /* image-not-found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-not-found.png"; sourceTree = "<group>"; };
+		B27C1C4E1B5A7D16007E2E35 /* ApplicationConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationConstant.swift; sourceTree = "<group>"; };
+		B27C1C511B5A8423007E2E35 /* Toucan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toucan.swift; sourceTree = "<group>"; };
+		B27C1C541B5AB719007E2E35 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		B27C1C561B5AB72C007E2E35 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B27C1C581B5ABCEE007E2E35 /* distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = distance.png; sourceTree = "<group>"; };
 		B2B890DE1B529288007CFF53 /* smart-promotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart-promotion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B890E21B529288007CFF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B890E31B529288007CFF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +80,6 @@
 		B2B8910B1B5293F4007CFF53 /* rated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rated.png; sourceTree = "<group>"; };
 		B2B8910C1B5293F4007CFF53 /* un-like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "un-like.png"; sourceTree = "<group>"; };
 		B2B8910D1B5293F4007CFF53 /* un-rate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "un-rate.png"; sourceTree = "<group>"; };
-		B2B891201B529456007CFF53 /* PromotionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionDetailViewController.swift; sourceTree = "<group>"; };
-		B2B891211B529456007CFF53 /* PromotionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionListViewController.swift; sourceTree = "<group>"; };
-		B2B891221B529456007CFF53 /* PromotionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +100,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B21C41301B57F0AA00DA7F28 /* Tab */ = {
+		B2595D7D1B5A234F00DEEEFE /* PageView */ = {
 			isa = PBXGroup;
 			children = (
-				B21C41311B57F0D600DA7F28 /* TabViewController.swift */,
+				B2595D7E1B5A236600DEEEFE /* PageItemController.swift */,
+				B27C1C3A1B5A4977007E2E35 /* ImagePageViewController.swift */,
 			);
-			path = Tab;
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		B27C1C3C1B5A580A007E2E35 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				B27C1C3D1B5A580A007E2E35 /* TabViewController.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		B27C1C3F1B5A5815007E2E35 /* PromotionView */ = {
+			isa = PBXGroup;
+			children = (
+				B27C1C401B5A5815007E2E35 /* PromotionDetailViewController.swift */,
+				B27C1C411B5A5815007E2E35 /* PromotionListViewController.swift */,
+				B27C1C421B5A5815007E2E35 /* PromotionViewCell.swift */,
+			);
+			path = PromotionView;
+			sourceTree = "<group>";
+		};
+		B27C1C4D1B5A7CF9007E2E35 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B27C1C4E1B5A7D16007E2E35 /* ApplicationConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B27C1C501B5A8415007E2E35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B27C1C511B5A8423007E2E35 /* Toucan.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B27C1C531B5AB719007E2E35 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B27C1C541B5AB719007E2E35 /* ImageExtension.swift */,
+				B27C1C561B5AB72C007E2E35 /* ColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		B2B890D51B529288007CFF53 = {
@@ -113,8 +173,12 @@
 		B2B890E01B529288007CFF53 /* smart-promotion */ = {
 			isa = PBXGroup;
 			children = (
-				B21C41301B57F0AA00DA7F28 /* Tab */,
-				B2B8911F1B529456007CFF53 /* Promotion */,
+				B27C1C531B5AB719007E2E35 /* Extension */,
+				B27C1C501B5A8415007E2E35 /* Utils */,
+				B27C1C4D1B5A7CF9007E2E35 /* Constant */,
+				B27C1C3F1B5A5815007E2E35 /* PromotionView */,
+				B27C1C3C1B5A580A007E2E35 /* TabView */,
+				B2595D7D1B5A234F00DEEEFE /* PageView */,
 				B2B891031B5293F4007CFF53 /* Images */,
 				B2B890E31B529288007CFF53 /* AppDelegate.swift */,
 				B2B890E51B529288007CFF53 /* ViewController.swift */,
@@ -154,6 +218,8 @@
 		B2B891031B5293F4007CFF53 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B27C1C581B5ABCEE007E2E35 /* distance.png */,
+				B27C1C4B1B5A7C18007E2E35 /* image-not-found.png */,
 				B2B891041B5293F4007CFF53 /* liked.png */,
 				B2B891051B5293F4007CFF53 /* promotion1.png */,
 				B2B891061B5293F4007CFF53 /* promotion2.png */,
@@ -166,16 +232,6 @@
 				B2B8910D1B5293F4007CFF53 /* un-rate.png */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		B2B8911F1B529456007CFF53 /* Promotion */ = {
-			isa = PBXGroup;
-			children = (
-				B2B891201B529456007CFF53 /* PromotionDetailViewController.swift */,
-				B2B891211B529456007CFF53 /* PromotionListViewController.swift */,
-				B2B891221B529456007CFF53 /* PromotionViewCell.swift */,
-			);
-			path = Promotion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +318,7 @@
 				B2B890E91B529288007CFF53 /* Main.storyboard in Resources */,
 				B2B891151B5293F4007CFF53 /* rated.png in Resources */,
 				B2B891161B5293F4007CFF53 /* un-like.png in Resources */,
+				B27C1C591B5ABCEE007E2E35 /* distance.png in Resources */,
 				B2B891141B5293F4007CFF53 /* promotion6.png in Resources */,
 				B2B8910E1B5293F4007CFF53 /* liked.png in Resources */,
 				B2B8910F1B5293F4007CFF53 /* promotion1.png in Resources */,
@@ -270,6 +327,7 @@
 				B2B891171B5293F4007CFF53 /* un-rate.png in Resources */,
 				B2B891131B5293F4007CFF53 /* promotion5.png in Resources */,
 				B2B891111B5293F4007CFF53 /* promotion3.png in Resources */,
+				B27C1C4C1B5A7C18007E2E35 /* image-not-found.png in Resources */,
 				B2B890EB1B529288007CFF53 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,12 +346,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B21C41321B57F0D600DA7F28 /* TabViewController.swift in Sources */,
-				B2B891251B529456007CFF53 /* PromotionViewCell.swift in Sources */,
+				B27C1C441B5A5815007E2E35 /* PromotionListViewController.swift in Sources */,
+				B2595D7F1B5A236600DEEEFE /* PageItemController.swift in Sources */,
+				B27C1C431B5A5815007E2E35 /* PromotionDetailViewController.swift in Sources */,
+				B27C1C571B5AB72C007E2E35 /* ColorExtension.swift in Sources */,
 				B2B890E61B529288007CFF53 /* ViewController.swift in Sources */,
-				B2B891231B529456007CFF53 /* PromotionDetailViewController.swift in Sources */,
-				B2B891241B529456007CFF53 /* PromotionListViewController.swift in Sources */,
+				B27C1C451B5A5815007E2E35 /* PromotionViewCell.swift in Sources */,
+				B27C1C4F1B5A7D16007E2E35 /* ApplicationConstant.swift in Sources */,
 				B2B890E41B529288007CFF53 /* AppDelegate.swift in Sources */,
+				B27C1C3E1B5A580A007E2E35 /* TabViewController.swift in Sources */,
+				B27C1C3B1B5A4977007E2E35 /* ImagePageViewController.swift in Sources */,
+				B27C1C551B5AB719007E2E35 /* ImageExtension.swift in Sources */,
+				B27C1C521B5A8423007E2E35 /* Toucan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

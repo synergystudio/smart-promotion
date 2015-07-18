@@ -19,7 +19,7 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
         "แลกรับส่วนลดเพิ่มสูงสุด 15% ทุกวีคเอนด์ วันนี้ - 21 มิ.ย. 58 ที่ โรบินสันทุกสาขา","รับเครดิตเงินคืน 5% วันนี้ – 30 มิ.ย. 58"];
     let province: [String] = ["กรุงเทพมหานคร","กรุงเทพมหานคร","กรุงเทพมหานคร","กรุงเทพมหานคร","กรุงเทพมหานคร","กรุงเทพมหานคร"];
     let distance: [String] = ["20 m","25 m","30 m","125 m","120 m","100 m"];
-    let promotionImage: [String] = ["promotion1.png","promotion2.png","promotion3.png","promotion4.png","promotion5.png","promotion6.png"];
+    let promotionImage: [String] = ["http://www.krungsricard.com/kccstatic/img/dining/page-bbq-plaza.png","http://www.krungsricard.com/kccstatic/img/dining/page-toko-ichiban-2.png","http://www.krungsricard.com/kccstatic/img/dining/page-suki-masa.png","http://www.krungsricard.com/kccstatic/img/shopping/page-ethnicraft.jpg","http://www.krungsricard.com/kccstatic/img/shopping/page-ethnicraft.jpg","http://www.krungsricard.com/kccstatic/img/shopping/page-ethnicraft.jpg"];
     let likeFlag : [String] = ["Y","Y","N","Y","N","N"];
     let star : [String] = ["3","2","5","5","4","0"];
     let rated = UIImage(named: "rated.png")
@@ -48,55 +48,61 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let promotionCell = promotionTableView.dequeueReusableCellWithIdentifier(promotionCellIdentifier) as! PromotionListViewCell
+        
+        promotionCell.cellContent.layer.cornerRadius = 3
+        promotionCell.cellContent.layer.masksToBounds = true
+        promotionCell.cellContent.layer.borderWidth = 1
+        promotionCell.cellContent.layer.borderColor = ApplicationConstant.Colors.borderColor.CGColor
+        
         promotionCell.promotionNameLbl.text = promotionNames[indexPath.row]
         promotionCell.locationLbl.text = location[indexPath.row]
         promotionCell.productLbl.text = product[indexPath.row]
         promotionCell.shortDescLbl.text = shortDesc[indexPath.row]
         promotionCell.provinceLbl.text = province[indexPath.row]
         promotionCell.distanceLbl.text = distance [indexPath.row]
-        promotionCell.promotionIconImg.image = UIImage(named: promotionImage[indexPath.row])
+        promotionCell.promotionIconImg.downloadImage(promotionImage[indexPath.row])
         let likeFlagTemp = likeFlag[indexPath.row];
         if likeFlag[indexPath.row] == "Y" {
-            promotionCell.favoriteImg.image = self.liked
+            promotionCell.favoriteImg.image = ApplicationConstant.Images.liked
         }else {
-            promotionCell.favoriteImg.image = self.unlike
+            promotionCell.favoriteImg.image = ApplicationConstant.Images.unlike
         }
         if star[indexPath.row] == "0" {
-            promotionCell.oneStarImg.image = self.unrate
-            promotionCell.twoStarImg.image = self.unrate
-            promotionCell.threeStarImg.image = self.unrate
-            promotionCell.fourStarImg.image = self.unrate
-            promotionCell.fiveStarImg.image = self.unrate
+            promotionCell.oneStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.twoStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.threeStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.fourStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star[indexPath.row] == "1" {
-            promotionCell.oneStarImg.image = self.rated
-            promotionCell.twoStarImg.image = self.unrate
-            promotionCell.threeStarImg.image = self.unrate
-            promotionCell.fourStarImg.image = self.unrate
-            promotionCell.fiveStarImg.image = self.unrate
+            promotionCell.oneStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.twoStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.threeStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.fourStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star[indexPath.row] == "2" {
-            promotionCell.oneStarImg.image = self.rated
-            promotionCell.twoStarImg.image = self.rated
-            promotionCell.threeStarImg.image = self.unrate
-            promotionCell.fourStarImg.image = self.unrate
-            promotionCell.fiveStarImg.image = self.unrate
+            promotionCell.oneStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.twoStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.threeStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.fourStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star[indexPath.row] == "3" {
-            promotionCell.oneStarImg.image = self.rated
-            promotionCell.twoStarImg.image = self.rated
-            promotionCell.threeStarImg.image = self.rated
-            promotionCell.fourStarImg.image = self.unrate
-            promotionCell.fiveStarImg.image = self.unrate
+            promotionCell.oneStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.twoStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.threeStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.fourStarImg.image = ApplicationConstant.Images.unrate
+            promotionCell.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star[indexPath.row] == "4" {
-            promotionCell.oneStarImg.image = self.rated
-            promotionCell.twoStarImg.image = self.rated
-            promotionCell.threeStarImg.image = self.rated
-            promotionCell.fourStarImg.image = self.rated
-            promotionCell.fiveStarImg.image = self.unrate
+            promotionCell.oneStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.twoStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.threeStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.fourStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star[indexPath.row] == "5" {
-            promotionCell.oneStarImg.image = self.rated
-            promotionCell.twoStarImg.image = self.rated
-            promotionCell.threeStarImg.image = self.rated
-            promotionCell.fourStarImg.image = self.rated
-            promotionCell.fiveStarImg.image = self.rated
+            promotionCell.oneStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.twoStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.threeStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.fourStarImg.image = ApplicationConstant.Images.rated
+            promotionCell.fiveStarImg.image = ApplicationConstant.Images.rated
         }
         
         return promotionCell
