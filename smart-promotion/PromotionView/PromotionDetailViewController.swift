@@ -34,10 +34,6 @@ class PromotionDetailViewController: UIViewController {
     var promotionImage = String()
     var likeFlag  = String()
     var star = String()
-    var rated = UIImage(named: "rated.png")
-    var unrate = UIImage(named: "un-rate.png")
-    var liked = UIImage(named: "liked.png")
-    var unlike = UIImage(named: "un-like.png")
     
     override func viewWillAppear(animated: Bool) {
         self.promotionNameLbl.text = promotionName
@@ -51,46 +47,44 @@ class PromotionDetailViewController: UIViewController {
         self.promotionIconImg.downloadImage(promotionImage)
         let likeFlagTemp = likeFlag;
         if likeFlag == "Y" {
-            self.favoriteImg.image = self.liked
-        }else {
-            self.favoriteImg.image = self.unlike
+            self.favoriteImg.image = ApplicationConstant.Images.liked
         }
         if star == "0" {
-            self.oneStarImg.image = self.unrate
-            self.twoStarImg.image = self.unrate
-            self.threeStarImg.image = self.unrate
-            self.fourStarImg.image = self.unrate
-            self.fiveStarImg.image = self.unrate
+            self.oneStarImg.image = ApplicationConstant.Images.unrate
+            self.twoStarImg.image = ApplicationConstant.Images.unrate
+            self.threeStarImg.image = ApplicationConstant.Images.unrate
+            self.fourStarImg.image = ApplicationConstant.Images.unrate
+            self.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star == "1" {
-            self.oneStarImg.image = self.rated
-            self.twoStarImg.image = self.unrate
-            self.threeStarImg.image = self.unrate
-            self.fourStarImg.image = self.unrate
-            self.fiveStarImg.image = self.unrate
+            self.oneStarImg.image = ApplicationConstant.Images.rated
+            self.twoStarImg.image = ApplicationConstant.Images.unrate
+            self.threeStarImg.image = ApplicationConstant.Images.unrate
+            self.fourStarImg.image = ApplicationConstant.Images.unrate
+            self.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star == "2" {
-            self.oneStarImg.image = self.rated
-            self.twoStarImg.image = self.rated
-            self.threeStarImg.image = self.unrate
-            self.fourStarImg.image = self.unrate
-            self.fiveStarImg.image = self.unrate
+            self.oneStarImg.image = ApplicationConstant.Images.rated
+            self.twoStarImg.image = ApplicationConstant.Images.rated
+            self.threeStarImg.image = ApplicationConstant.Images.unrate
+            self.fourStarImg.image = ApplicationConstant.Images.unrate
+            self.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star == "3" {
-            self.oneStarImg.image = self.rated
-            self.twoStarImg.image = self.rated
-            self.threeStarImg.image = self.rated
-            self.fourStarImg.image = self.unrate
-            self.fiveStarImg.image = self.unrate
+            self.oneStarImg.image = ApplicationConstant.Images.rated
+            self.twoStarImg.image = ApplicationConstant.Images.rated
+            self.threeStarImg.image = ApplicationConstant.Images.rated
+            self.fourStarImg.image = ApplicationConstant.Images.unrate
+            self.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star == "4" {
-            self.oneStarImg.image = self.rated
-            self.twoStarImg.image = self.rated
-            self.threeStarImg.image = self.rated
-            self.fourStarImg.image = self.rated
-            self.fiveStarImg.image = self.unrate
+            self.oneStarImg.image = ApplicationConstant.Images.rated
+            self.twoStarImg.image = ApplicationConstant.Images.rated
+            self.threeStarImg.image = ApplicationConstant.Images.rated
+            self.fourStarImg.image = ApplicationConstant.Images.rated
+            self.fiveStarImg.image = ApplicationConstant.Images.unrate
         }else if star == "5" {
-            self.oneStarImg.image = self.rated
-            self.twoStarImg.image = self.rated
-            self.threeStarImg.image = self.rated
-            self.fourStarImg.image = self.rated
-            self.fiveStarImg.image = self.rated
+            self.oneStarImg.image = ApplicationConstant.Images.rated
+            self.twoStarImg.image = ApplicationConstant.Images.rated
+            self.threeStarImg.image = ApplicationConstant.Images.rated
+            self.fourStarImg.image = ApplicationConstant.Images.rated
+            self.fiveStarImg.image = ApplicationConstant.Images.rated
         }
 
     }

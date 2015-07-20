@@ -27,7 +27,6 @@
 		B2B890FA1B529288007CFF53 /* smart_promotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B890F91B529288007CFF53 /* smart_promotionTests.swift */; };
 		B2B8910E1B5293F4007CFF53 /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B891041B5293F4007CFF53 /* liked.png */; };
 		B2B891151B5293F4007CFF53 /* rated.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8910B1B5293F4007CFF53 /* rated.png */; };
-		B2B891161B5293F4007CFF53 /* un-like.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8910C1B5293F4007CFF53 /* un-like.png */; };
 		B2B891171B5293F4007CFF53 /* un-rate.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8910D1B5293F4007CFF53 /* un-rate.png */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +65,6 @@
 		B2B890F91B529288007CFF53 /* smart_promotionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smart_promotionTests.swift; sourceTree = "<group>"; };
 		B2B891041B5293F4007CFF53 /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
 		B2B8910B1B5293F4007CFF53 /* rated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rated.png; sourceTree = "<group>"; };
-		B2B8910C1B5293F4007CFF53 /* un-like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "un-like.png"; sourceTree = "<group>"; };
 		B2B8910D1B5293F4007CFF53 /* un-rate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "un-rate.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,7 +216,6 @@
 				B27C1C4B1B5A7C18007E2E35 /* image-not-found.png */,
 				B2B891041B5293F4007CFF53 /* liked.png */,
 				B2B8910B1B5293F4007CFF53 /* rated.png */,
-				B2B8910C1B5293F4007CFF53 /* un-like.png */,
 				B2B8910D1B5293F4007CFF53 /* un-rate.png */,
 			);
 			path = Images;
@@ -306,7 +303,6 @@
 			files = (
 				B2B890E91B529288007CFF53 /* Main.storyboard in Resources */,
 				B2B891151B5293F4007CFF53 /* rated.png in Resources */,
-				B2B891161B5293F4007CFF53 /* un-like.png in Resources */,
 				B27C1C591B5ABCEE007E2E35 /* distance.png in Resources */,
 				B2B8910E1B5293F4007CFF53 /* liked.png in Resources */,
 				B2B890EE1B529288007CFF53 /* LaunchScreen.xib in Resources */,

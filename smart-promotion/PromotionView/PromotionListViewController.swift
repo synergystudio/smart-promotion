@@ -22,10 +22,6 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
     let promotionImage: [String] = ["http://www.krungsricard.com/kccstatic/img/dining/page-bbq-plaza.png","http://www.krungsricard.com/kccstatic/img/dining/page-toko-ichiban-2.png","http://www.krungsricard.com/kccstatic/img/dining/page-suki-masa.png","http://www.krungsricard.com/kccstatic/img/shopping/page-ethnicraft.jpg","http://www.krungsricard.com/kccstatic/img/shopping/page-ethnicraft.jpg","http://www.krungsricard.com/kccstatic/img/shopping/page-ethnicraft.jpg"];
     let likeFlag : [String] = ["Y","Y","N","Y","N","N"];
     let star : [String] = ["3","2","5","5","4","0"];
-    let rated = UIImage(named: "rated.png")
-    let unrate = UIImage(named: "un-rate.png")
-    let liked = UIImage(named: "liked.png")
-    let unlike = UIImage(named: "un-like.png")
     let promotionCellIdentifier = "promotionCellIdentifier"
     let countItem = 6;
     override func viewWillAppear(animated: Bool) {
@@ -64,8 +60,6 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
         let likeFlagTemp = likeFlag[indexPath.row];
         if likeFlag[indexPath.row] == "Y" {
             promotionCell.favoriteImg.image = ApplicationConstant.Images.liked
-        }else {
-            promotionCell.favoriteImg.image = ApplicationConstant.Images.unlike
         }
         if star[indexPath.row] == "0" {
             promotionCell.oneStarImg.image = ApplicationConstant.Images.unrate

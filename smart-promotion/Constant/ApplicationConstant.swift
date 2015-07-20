@@ -13,7 +13,6 @@ class ApplicationConstant {
         static let rated = UIImage(named: "rated.png")
         static let unrate = UIImage(named: "un-rate.png")
         static let liked = UIImage(named: "liked.png")
-        static let unlike = UIImage(named: "un-like.png")
         static let imageNotFound = UIImage(named: "image-not-found.png")
         static let distance = UIImage(named: "distance.png")
     }
