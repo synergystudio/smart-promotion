@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import ObjectMapper
+import Alamofire
+
 class PromotionListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var promotionTableView: UITableView!
     let titleName  = "Promotions"
@@ -31,6 +34,22 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
         promotionTableView.delegate = self
         promotionTableView.dataSource = self
+        Alamofire.request(.GET, "https://api.github.com/repos/hkellaway/swift-json-comparison", parameters: nil).response {
+            (request, response, data, error) in
+            println(error?.localizedDescription)
+            // error handling...
+            
+            let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data as! NSData, options: NSJSONReadingOptions(0), error: nil)
+            
+            if let j: AnyObject = json {
+                
+                let repo = Mapper<RepoObjectMapper>().map(j)
+                
+                println(repo!.name)
+            }
+            
+        }
+
     }
     
     // MARK:  UITextFieldDelegate Methods
@@ -122,5 +141,37 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
             destination.star = self.star[promotionIndex!]
 
         }
+    }
+}
+class RepoOwnerObjectMapper: Mappable {
+    var ownerId: Int?
+    var username: String?
+    
+    required init?(_ map: Map) {
+        mapping(map)
+    }
+    
+    func mapping(map: Map) {
+        ownerId     <- map["id"]
+        username    <- map["login"]
+    }
+}
+class RepoObjectMapper: Mappable {
+    var repoId: Int?
+    var name: String?
+    var desc: String?
+    var url: NSURL?
+    var owner: RepoOwnerObjectMapper?
+    
+    required init?(_ map: Map) {
+        mapping(map)
+    }
+    
+    func mapping(map: Map) {
+        repoId  <- map["id"]
+        name    <- map["name"]
+        desc    <- map["description"]
+        url     <- (map["html_url"], URLTransform())
+        owner   <- map["owner"]
     }
 }
