@@ -9,8 +9,14 @@
 import UIKit
 import Alamofire
 import ObjectMapper
-class PromotionListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+import CoreLocation
+
+class PromotionListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,CLLocationManagerDelegate {
+    
+    let locationManager = CLLocationManager()
+    var promotions : [Promotion] = [Promotion(location: CLLocation(latitude: 13.7446378007107, longitude: 100.547783238412))]
     @IBOutlet var promotionTableView: UITableView!
+    
     let titleName  = "Promotions"
     let promotionNames: [String] = ["มา 4 จ่าย 3","VC Fablic Factory Sale 2015","Mega Mid-Year Sale","Central Greatest Grand Sale","Robinson All About Health & Beauty","King Power"]
     
@@ -26,6 +32,7 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
     let star : [String] = ["3","2","5","5","4","0"];
     let promotionCellIdentifier = "promotionCellIdentifier"
     let countItem = 6;
+    
     override func viewWillAppear(animated: Bool) {
         self.tabBarController?.navigationItem.title = titleName
     }
@@ -33,23 +40,42 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
         promotionTableView.delegate = self
         promotionTableView.dataSource = self
-        Alamofire.request(.GET, "https://api.github.com/repos/hkellaway/swift-json-comparison", parameters: nil).response {
-            (request, response, data, error) in
-            
-            // error handling...
-            
-            let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data as! NSData, options: NSJSONReadingOptions(0), error: nil)
-            
-            if let j: AnyObject = json {
-                
-                let repo = Mapper<RepoObjectMapper>().map(j)
-                
-                println(repo!.owner?.username)
-            }
-            
+        
+        // 1
+        locationManager.delegate = self
+        // 2
+        locationManager.requestAlwaysAuthorization()
+        self.locationManager.distanceFilter  = 30
+//        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+//        locationManager.startMonitoringSignificantLocationChanges()
+        locationManager.startUpdatingLocation()
+        let locattionnotification = UILocalNotification()
+        locattionnotification.alertBody = "You have entered a high risk zone (Crown Range Road) , proceed with caution"
+        locattionnotification.regionTriggersOnce = false
+        locattionnotification.region = CLCircularRegion(circularRegionWithCenter: CLLocationCoordinate2D(latitude:
+            13.7446378007107, longitude: 100.547783238412), radius: 1.0, identifier: "Location1")
+        UIApplication.sharedApplication().scheduleLocalNotification(locattionnotification)
+        
+        Notification.setNoti("test",body:"test")
+    }
+
+    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
+        let currentLocation : CLLocation = newLocation
+
+        var toLocation = CLLocation(latitude: 13.741620, longitude: 100.539870)
+        let distanceMeter = currentLocation.distanceFromLocation(toLocation)
+        println("didUpdateLocations:  \(currentLocation.coordinate.latitude)), \(currentLocation.coordinate.longitude) ,Distance: \(distanceMeter)")
+        if distanceMeter < 500 {
+            Notification.setNoti("Found Promotion",body:"Promotion1")
         }
     }
-    
+    func locationManager(manager: CLLocationManager!,
+        didChangeAuthorizationStatus status: CLAuthorizationStatus)
+    {
+        if status == CLAuthorizationStatus.AuthorizedAlways || status == CLAuthorizationStatus.AuthorizedWhenInUse {
+            manager.startUpdatingLocation()
+        }
+    }
     // MARK:  UITextFieldDelegate Methods
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -141,35 +167,52 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
         }
     }
 }
-class RepoOwnerObjectMapper: Mappable {
-    var ownerId: Int?
-    var username: String?
-    
-    required init?(_ map: Map) {
-        mapping(map)
-    }
-    
-    func mapping(map: Map) {
-        ownerId     <- map["id"]
-        username    <- map["login"]
-    }
-}
-class RepoObjectMapper: Mappable {
-    var repoId: Int?
-    var name: String?
-    var desc: String?
-    var url: NSURL?
-    var owner: RepoOwnerObjectMapper?
-    
-    required init?(_ map: Map) {
-        mapping(map)
-    }
-    
-    func mapping(map: Map) {
-        repoId  <- map["id"]
-        name    <- map["name"]
-        desc    <- map["description"]
-        url     <- (map["html_url"], URLTransform())
-        owner   <- map["owner"]
-    }
-}
+
+//        Alamofire.request(.GET, "https://api.github.com/repos/hkellaway/swift-json-comparison", parameters: nil).response {
+//            (request, response, data, error) in
+//
+//            // error handling...
+//
+//            let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data as! NSData, options: NSJSONReadingOptions(0), error: nil)
+//
+//            if let j: AnyObject = json {
+//
+//                let repo = Mapper<RepoObjectMapper>().map(j)
+//
+//                println(repo!.owner?.username)
+//            }
+//
+//        }
+
+//class RepoOwnerObjectMapper: Mappable {
+//    var ownerId: Int?
+//    var username: String?
+//    
+//    required init?(_ map: Map) {
+//        mapping(map)
+//    }
+//    
+//    func mapping(map: Map) {
+//        ownerId     <- map["id"]
+//        username    <- map["login"]
+//    }
+//}
+//class RepoObjectMapper: Mappable {
+//    var repoId: Int?
+//    var name: String?
+//    var desc: String?
+//    var url: NSURL?
+//    var owner: RepoOwnerObjectMapper?
+//    
+//    required init?(_ map: Map) {
+//        mapping(map)
+//    }
+//    
+//    func mapping(map: Map) {
+//        repoId  <- map["id"]
+//        name    <- map["name"]
+//        desc    <- map["description"]
+//        url     <- (map["html_url"], URLTransform())
+//        owner   <- map["owner"]
+//    }
+//}
