@@ -1,316 +1,74 @@
 <?xml version="1.0"?>
 <gpx version="1.1" creator="Xcode">
+    <wpt lat="13.742910" lon="100.547520">
+        <ele>13.55</ele>
+        <time>2015-07-23T15:55:35Z</time>
+        <name>pt0</name>
+    </wpt>
+    <wpt lat="13.742010" lon="100.547370">
+        <ele>11.43</ele>
+        <time>2015-07-23T15:55:59Z</time>
+        <name>pt1</name>
+    </wpt>
+    <wpt lat="13.741290" lon="100.547220">
+        <ele>13.85</ele>
+        <time>2015-07-23T15:56:18Z</time>
+        <name>pt2</name>
+    </wpt>
+    <wpt lat="13.740600" lon="100.547100">
+        <ele>17.07</ele>
+        <time>2015-07-23T15:56:37Z</time>
+        <name>pt3</name>
+    </wpt>
+    <wpt lat="13.739130" lon="100.546860">
+        <ele>26.56</ele>
+        <time>2015-07-23T15:57:17Z</time>
+        <name>pt4</name>
+    </wpt>
+    <wpt lat="13.737990" lon="100.546680">
+        <ele>9.97</ele>
+        <time>2015-07-23T15:57:48Z</time>
+        <name>pt5</name>
+    </wpt>
+    <wpt lat="13.737360" lon="100.546560">
+        <ele>10.43</ele>
+        <time>2015-07-23T15:58:05Z</time>
+        <name>pt6</name>
+    </wpt>
+    <wpt lat="13.737180" lon="100.546530">
+        <ele>9.58</ele>
+        <time>2015-07-23T15:58:10Z</time>
+        <name>pt7</name>
+    </wpt>
+    <wpt lat="13.737210" lon="100.546380">
+        <ele>10.68</ele>
+        <time>2015-07-23T15:58:14Z</time>
+        <name>pt8</name>
+    </wpt>
+    <wpt lat="13.738480" lon="100.546610">
+        <ele>11.86</ele>
+        <time>2015-07-23T15:58:48Z</time>
+        <name>pt9</name>
+    </wpt>
+    <wpt lat="13.740750" lon="100.547010">
+        <ele>15.94</ele>
+        <time>2015-07-23T15:59:49Z</time>
+        <name>pt10</name>
+    </wpt>
+    <wpt lat="13.741920" lon="100.547200">
+        <ele>12.1</ele>
+        <time>2015-07-23T16:00:21Z</time>
+        <name>pt11</name>
+    </wpt>
+    <wpt lat="13.742410" lon="100.547300">
+        <ele>11.31</ele>
+        <time>2015-07-23T16:00:34Z</time>
+        <name>pt12</name>
+    </wpt>
+    <wpt lat="13.742970" lon="100.547410">
+        <ele>13.62</ele>
+        <time>2015-07-23T16:00:50Z</time>
+        <name>pt13</name>
+    </wpt>
 
-
-
-        <wpt lat="13.742950" lon="100.547530">
-            <ele>13.69</ele>
-            <time>2015-07-22T20:33:15Z</time>
-            <name>pt0</name>
-        </wpt>
-        <wpt lat="13.742010" lon="100.547370">
-            <ele>11.43</ele>
-            <time>2015-07-22T20:33:40Z</time>
-            <name>pt1</name>
-        </wpt>
-        <wpt lat="13.741290" lon="100.547220">
-            <ele>13.85</ele>
-            <time>2015-07-22T20:34:00Z</time>
-            <name>pt2</name>
-        </wpt>
-        <wpt lat="13.740500" lon="100.547080">
-            <ele>17.69</ele>
-            <time>2015-07-22T20:34:21Z</time>
-            <name>pt3</name>
-        </wpt>
-        <wpt lat="13.739930" lon="100.547000">
-            <ele>21.21</ele>
-            <time>2015-07-22T20:34:36Z</time>
-            <name>pt4</name>
-        </wpt>
-        <wpt lat="13.738940" lon="100.546820">
-            <ele>23.07</ele>
-            <time>2015-07-22T20:35:03Z</time>
-            <name>pt5</name>
-        </wpt>
-        <wpt lat="13.737900" lon="100.546670">
-            <ele>10.07</ele>
-            <time>2015-07-22T20:35:31Z</time>
-            <name>pt6</name>
-        </wpt>
-        <wpt lat="13.737180" lon="100.546530">
-            <ele>9.58</ele>
-            <time>2015-07-22T20:35:51Z</time>
-            <name>pt7</name>
-        </wpt>
-        <wpt lat="13.736130" lon="100.546370">
-            <ele>9.73</ele>
-            <time>2015-07-22T20:36:19Z</time>
-            <name>pt8</name>
-        </wpt>
-        <wpt lat="13.735330" lon="100.546200">
-            <ele>13.88</ele>
-            <time>2015-07-22T20:36:41Z</time>
-            <name>pt9</name>
-        </wpt>
-        <wpt lat="13.735040" lon="100.546120">
-            <ele>16.06</ele>
-            <time>2015-07-22T20:36:49Z</time>
-            <name>pt10</name>
-        </wpt>
-        <wpt lat="13.734750" lon="100.546070">
-            <ele>15.49</ele>
-            <time>2015-07-22T20:36:57Z</time>
-            <name>pt11</name>
-        </wpt>
-        <wpt lat="13.734640" lon="100.546000">
-            <ele>15.49</ele>
-            <time>2015-07-22T20:37:00Z</time>
-            <name>pt12</name>
-        </wpt>
-        <wpt lat="13.734330" lon="100.545940">
-            <ele>13.81</ele>
-            <time>2015-07-22T20:37:09Z</time>
-            <name>pt13</name>
-        </wpt>
-        <wpt lat="13.734140" lon="100.545960">
-            <ele>12.28</ele>
-            <time>2015-07-22T20:37:14Z</time>
-            <name>pt14</name>
-        </wpt>
-        <wpt lat="13.734050" lon="100.545930">
-            <ele>11.46</ele>
-            <time>2015-07-22T20:37:16Z</time>
-            <name>pt15</name>
-        </wpt>
-        <wpt lat="13.731690" lon="100.545500">
-            <ele>7</ele>
-            <time>2015-07-22T20:38:20Z</time>
-            <name>pt16</name>
-        </wpt>
-        <wpt lat="13.731690" lon="100.545450">
-            <ele>7.31</ele>
-            <time>2015-07-22T20:38:22Z</time>
-            <name>pt17</name>
-        </wpt>
-        <wpt lat="13.731700" lon="100.545410">
-            <ele>7.54</ele>
-            <time>2015-07-22T20:38:23Z</time>
-            <name>pt18</name>
-        </wpt>
-        <wpt lat="13.732580" lon="100.545550">
-            <ele>7.09</ele>
-            <time>2015-07-22T20:38:46Z</time>
-            <name>pt19</name>
-        </wpt>
-        <wpt lat="13.733930" lon="100.545790">
-            <ele>10.4</ele>
-            <time>2015-07-22T20:39:23Z</time>
-            <name>pt20</name>
-        </wpt>
-        <wpt lat="13.734150" lon="100.545850">
-            <ele>12.75</ele>
-            <time>2015-07-22T20:39:29Z</time>
-            <name>pt21</name>
-        </wpt>
-        <wpt lat="13.734140" lon="100.545960">
-            <ele>12.28</ele>
-            <time>2015-07-22T20:39:32Z</time>
-            <name>pt22</name>
-        </wpt>
-        <wpt lat="13.734050" lon="100.545930">
-            <ele>11.46</ele>
-            <time>2015-07-22T20:39:34Z</time>
-            <name>pt23</name>
-        </wpt>
-        <wpt lat="13.731690" lon="100.545500">
-            <ele>7</ele>
-            <time>2015-07-22T20:40:38Z</time>
-            <name>pt24</name>
-        </wpt>
-        <wpt lat="13.731690" lon="100.545450">
-            <ele>7.31</ele>
-            <time>2015-07-22T20:40:40Z</time>
-            <name>pt25</name>
-        </wpt>
-        <wpt lat="13.731700" lon="100.545410">
-            <ele>7.54</ele>
-            <time>2015-07-22T20:40:41Z</time>
-            <name>pt26</name>
-        </wpt>
-        <wpt lat="13.731840" lon="100.545430">
-            <ele>7.42</ele>
-            <time>2015-07-22T20:40:44Z</time>
-            <name>pt27</name>
-        </wpt>
-        <wpt lat="13.732580" lon="100.545550">
-            <ele>7.09</ele>
-            <time>2015-07-22T20:41:04Z</time>
-            <name>pt28</name>
-        </wpt>
-        <wpt lat="13.734050" lon="100.545820">
-            <ele>11.72</ele>
-            <time>2015-07-22T20:41:44Z</time>
-            <name>pt29</name>
-        </wpt>
-        <wpt lat="13.734270" lon="100.540250">
-            <ele>8.96</ele>
-            <time>2015-07-22T20:44:09Z</time>
-            <name>pt30</name>
-        </wpt>
-        <wpt lat="13.734340" lon="100.538440">
-            <ele>6.78</ele>
-            <time>2015-07-22T20:44:56Z</time>
-            <name>pt31</name>
-        </wpt>
-        <wpt lat="13.735000" lon="100.538680">
-            <ele>6.58</ele>
-            <time>2015-07-22T20:45:15Z</time>
-            <name>pt32</name>
-        </wpt>
-        <wpt lat="13.735470" lon="100.538790">
-            <ele>11.94</ele>
-            <time>2015-07-22T20:45:27Z</time>
-            <name>pt33</name>
-        </wpt>
-        <wpt lat="13.740640" lon="100.539560">
-            <ele>13.53</ele>
-            <time>2015-07-22T20:47:47Z</time>
-            <name>pt34</name>
-        </wpt>
-        <wpt lat="13.741640" lon="100.539710">
-            <ele>11.95</ele>
-            <time>2015-07-22T20:48:14Z</time>
-            <name>pt35</name>
-        </wpt>
-        <wpt lat="13.741620" lon="100.539870">
-            <ele>14.29</ele>
-            <time>2015-07-22T20:48:18Z</time>
-            <name>pt36</name>
-        </wpt>
-        <wpt lat="13.738920" lon="100.539470">
-            <ele>17.45</ele>
-            <time>2015-07-22T20:49:31Z</time>
-            <name>pt37</name>
-        </wpt>
-        <wpt lat="13.737270" lon="100.539200">
-            <ele>10.23</ele>
-            <time>2015-07-22T20:50:15Z</time>
-            <name>pt38</name>
-        </wpt>
-        <wpt lat="13.735800" lon="100.539000">
-            <ele>16.76</ele>
-            <time>2015-07-22T20:50:55Z</time>
-            <name>pt39</name>
-        </wpt>
-        <wpt lat="13.735170" lon="100.538880">
-            <ele>8.45</ele>
-            <time>2015-07-22T20:51:12Z</time>
-            <name>pt40</name>
-        </wpt>
-        <wpt lat="13.734770" lon="100.538760">
-            <ele>6.35</ele>
-            <time>2015-07-22T20:51:23Z</time>
-            <name>pt41</name>
-        </wpt>
-        <wpt lat="13.734450" lon="100.538640">
-            <ele>6.38</ele>
-            <time>2015-07-22T20:51:32Z</time>
-            <name>pt42</name>
-        </wpt>
-        <wpt lat="13.734420" lon="100.538920">
-            <ele>5.81</ele>
-            <time>2015-07-22T20:51:40Z</time>
-            <name>pt43</name>
-        </wpt>
-        <wpt lat="13.734320" lon="100.541300">
-            <ele>8.06</ele>
-            <time>2015-07-22T20:52:41Z</time>
-            <name>pt44</name>
-        </wpt>
-        <wpt lat="13.734310" lon="100.541630">
-            <ele>6.94</ele>
-            <time>2015-07-22T20:52:50Z</time>
-            <name>pt45</name>
-        </wpt>
-        <wpt lat="13.734330" lon="100.542200">
-            <ele>7.19</ele>
-            <time>2015-07-22T20:53:05Z</time>
-            <name>pt46</name>
-        </wpt>
-        <wpt lat="13.734260" lon="100.543070">
-            <ele>5.92</ele>
-            <time>2015-07-22T20:53:27Z</time>
-            <name>pt47</name>
-        </wpt>
-        <wpt lat="13.734220" lon="100.543930">
-            <ele>7.21</ele>
-            <time>2015-07-22T20:53:50Z</time>
-            <name>pt48</name>
-        </wpt>
-        <wpt lat="13.734200" lon="100.545050">
-            <ele>11.44</ele>
-            <time>2015-07-22T20:54:19Z</time>
-            <name>pt49</name>
-        </wpt>
-        <wpt lat="13.734150" lon="100.545850">
-            <ele>12.75</ele>
-            <time>2015-07-22T20:54:40Z</time>
-            <name>pt50</name>
-        </wpt>
-        <wpt lat="13.734330" lon="100.545940">
-            <ele>13.81</ele>
-            <time>2015-07-22T20:54:45Z</time>
-            <name>pt51</name>
-        </wpt>
-        <wpt lat="13.734460" lon="100.545970">
-            <ele>14.53</ele>
-            <time>2015-07-22T20:54:48Z</time>
-            <name>pt52</name>
-        </wpt>
-        <wpt lat="13.734640" lon="100.546000">
-            <ele>15.49</ele>
-            <time>2015-07-22T20:54:53Z</time>
-            <name>pt53</name>
-        </wpt>
-        <wpt lat="13.734760" lon="100.545980">
-            <ele>16.43</ele>
-            <time>2015-07-22T20:54:57Z</time>
-            <name>pt54</name>
-        </wpt>
-        <wpt lat="13.735350" lon="100.546060">
-            <ele>15.57</ele>
-            <time>2015-07-22T20:55:12Z</time>
-            <name>pt55</name>
-        </wpt>
-        <wpt lat="13.737140" lon="100.546360">
-            <ele>10.6</ele>
-            <time>2015-07-22T20:56:01Z</time>
-            <name>pt56</name>
-        </wpt>
-        <wpt lat="13.738570" lon="100.546630">
-            <ele>13.68</ele>
-            <time>2015-07-22T20:56:40Z</time>
-            <name>pt57</name>
-        </wpt>
-        <wpt lat="13.742030" lon="100.547220">
-            <ele>11.91</ele>
-            <time>2015-07-22T20:58:13Z</time>
-            <name>pt58</name>
-        </wpt>
-        <wpt lat="13.743100" lon="100.547430">
-            <ele>14.39</ele>
-            <time>2015-07-22T20:58:42Z</time>
-            <name>pt59</name>
-        </wpt>
-        <wpt lat="13.743380" lon="100.547510">
-            <ele>15.82</ele>
-            <time>2015-07-22T20:58:50Z</time>
-            <name>pt60</name>
-        </wpt>
-        <wpt lat="13.743670" lon="100.545810">
-            <ele>12.14</ele>
-            <time>2015-07-22T20:59:35Z</time>
-            <name>pt61</name>
-        </wpt>
 </gpx>

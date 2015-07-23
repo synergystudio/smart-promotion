@@ -40,14 +40,11 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
         promotionTableView.delegate = self
         promotionTableView.dataSource = self
-        
-        // 1
+
         locationManager.delegate = self
-        // 2
         locationManager.requestAlwaysAuthorization()
-        self.locationManager.distanceFilter  = 30
-//        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-//        locationManager.startMonitoringSignificantLocationChanges()
+        self.locationManager.distanceFilter  = 20
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager.startUpdatingLocation()
         let locattionnotification = UILocalNotification()
         locattionnotification.alertBody = "You have entered a high risk zone (Crown Range Road) , proceed with caution"
@@ -55,18 +52,22 @@ class PromotionListViewController: UIViewController, UITableViewDataSource, UITa
         locattionnotification.region = CLCircularRegion(circularRegionWithCenter: CLLocationCoordinate2D(latitude:
             13.7446378007107, longitude: 100.547783238412), radius: 1.0, identifier: "Location1")
         UIApplication.sharedApplication().scheduleLocalNotification(locattionnotification)
-        
-        Notification.setNoti("test",body:"test")
-    }
+            }
 
     func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
         let currentLocation : CLLocation = newLocation
-
-        var toLocation = CLLocation(latitude: 13.741620, longitude: 100.539870)
+        var toLocation = CLLocation(latitude: 13.739118, longitude: 100.547313)
         let distanceMeter = currentLocation.distanceFromLocation(toLocation)
-        println("didUpdateLocations:  \(currentLocation.coordinate.latitude)), \(currentLocation.coordinate.longitude) ,Distance: \(distanceMeter)")
-        if distanceMeter < 500 {
-            Notification.setNoti("Found Promotion",body:"Promotion1")
+        println("Distance: \(distanceMeter)m. :\(currentLocation.coordinate.latitude)), \(currentLocation.coordinate.longitude)")
+        if distanceMeter < 50 {
+            if UIApplication.sharedApplication().applicationState == .Active {
+                let alert = UIAlertController(title: "Found Promotion Nearby", message: "สตาร์บัคส์ สั่ง 5 จ่าย 1", preferredStyle: .Alert)
+                let action = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                alert.addAction(action)
+                self.presentViewController(alert, animated: true, completion: nil)
+            } else {
+                Notification.setNoti("Found Promotion Nearby",body:"สตาร์บัคส์ สั่ง 5 จ่าย 1")
+            }
         }
     }
     func locationManager(manager: CLLocationManager!,

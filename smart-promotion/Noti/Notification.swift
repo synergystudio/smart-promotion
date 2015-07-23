@@ -13,7 +13,7 @@ class Notification{
     static func setNoti(action: String!,body:String!){
         localNotification.alertAction = action
         localNotification.alertBody = body
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: 3)
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 1)
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
 }
